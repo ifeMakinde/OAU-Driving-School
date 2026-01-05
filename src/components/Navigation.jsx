@@ -22,7 +22,7 @@ function Navigation() {
       <Link to="/">
         <div className="flex justify-center items-center gap-2">
           <span className="bg-blue-600 p-2 rounded-md">
-            <Car color="white" size={32} strokeWidth={1} />
+            <Car color="white" size={28} strokeWidth={1} />
           </span>
           <h2 className="font-bold text-base lg:text-lg no-wrap tracking-wide">
             OAU <span className=" text-blue-600 font-bold">DRIVING </span>
@@ -34,10 +34,11 @@ function Navigation() {
       {/* desktop navlinks */}
       <nav className=" hidden lg:flex justify-between items-center gap-3  ">
         {navLinks.map((navLink) => (
-          <li className="list-none">
-            <Link to={`/${navLink}`} key={navLink}>
-              {navLink}
-            </Link>
+          <li
+            key={navLink}
+            className="list-none transition-all hover:scale-z-75 "
+          >
+            <Link to={`/${navLink}`}>{navLink}</Link>
           </li>
         ))}
       </nav>
@@ -51,9 +52,9 @@ function Navigation() {
         onClick={handleClick}
       >
         {!isMenuOpen ? (
-          <Menu size={32} strokeWidth={1} />
+          <Menu size={28} strokeWidth={1} />
         ) : (
-          <X size={32} strokeWidth={1} />
+          <X size={28} strokeWidth={1} />
         )}
       </button>
 

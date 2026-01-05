@@ -1,14 +1,25 @@
 import React from "react";
-// import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Navigation from "../components/navigation";
-import Plant from "../components/Plant";
+import { Award } from "lucide-react";
+import { Badge } from "../components/ui/badge";
+import Hero from "../components/Hero";
 
 function Homepage() {
   return (
-    <div className="">
+    <>
       <Navigation />
-    </div>
+
+      <div className="text-center mt-6 ">
+        <Badge className="bg-white text-[14px] lg:text-md text-blue-600 px-4 py-1 font-bold border border-blue-100 shadow-md transition-all hover:translate-y-1  ">
+          <span>
+            <Award size={28} strokeWidth={2} />
+          </span>
+          #1 Rated Driving School 2024
+        </Badge>
+      </div>
+      <Hero />
+    </>
   );
 }
 
