@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navigation from "../components/navigation";
+import Navigation from "../components/Navigation";
 import { Award } from "lucide-react";
 import { Badge } from "../components/ui/badge";
 import Hero from "../components/Hero";
