@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import { Car, Menu } from "lucide-react";
+import { Car, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import MobileNav from "./MobileNav";
-import { X } from "lucide-react";
+// import { X } from "lucide-react";
 
 const navLinks = ["About", "Courses", "Review", "FAQ"];
 
