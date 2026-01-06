@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="max-w-[90%] md:max-w-[95] m-auto">
+    <div className="max-w-[90%] md:max-w-[95%] m-auto">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />
