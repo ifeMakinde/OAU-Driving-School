@@ -11,7 +11,7 @@ function Homepage() {
       <Navigation />
 
       <div className="text-center mt-6 ">
-        <Badge className="bg-white text-[14px] lg:text-md text-blue-600 px-4 py-1 font-bold border border-blue-100 shadow-md transition-all hover:translate-y-1  ">
+        <Badge className="bg-white text-[14px] lg:text-md text-blue-600 px-4 py-1 font-bold border border-blue-100 shadow-md transition-all hover:scale-90  ">
           <span>
             <Award size={28} strokeWidth={1} />
           </span>

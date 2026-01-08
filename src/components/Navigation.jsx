@@ -32,11 +32,11 @@ function Navigation() {
       </Link>
 
       {/* desktop navlinks */}
-      <nav className=" hidden lg:flex justify-between items-center gap-3  ">
+      <nav className=" hidden lg:flex justify-between items-center gap-4  ">
         {navLinks.map((navLink) => (
           <li
             key={navLink}
-            className="list-none transition-all hover:scale-z-75 "
+            className="list-none transition-all hover:scale-110 "
           >
             <Link to={`/${navLink}`}>{navLink}</Link>
           </li>

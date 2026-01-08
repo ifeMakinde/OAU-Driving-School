@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { BadgeCheck } from "lucide-react";
+import heroImage from "../assets/heroImage.webp";
 
 function Hero() {
   return (
-    <section className="mt-6">
-      <div className="text-center m-auto  flex flex-col gap-6">
+    <section className="mt-6 flex flex-col">
+      <div className="text-center m-auto flex flex-col gap-6">
         <h2 className="text-4xl lg:text-6xl font-bold tracking-wide ">
           Master the Road <br />
           <span className="text-blue-600"> With Confidence</span>
@@ -35,12 +36,20 @@ function Hero() {
           </p>
           <p className="text-[14px] lg:text-base flex justify-center items-center gap-1">
             <span>
-              {" "}
               <BadgeCheck color="#73ca70" size={24} strokeWidth={1} />
             </span>
             Cerfiied Professionals
           </p>
         </div>
+      </div>
+
+      {/* hero image */}
+      <div className="m-auto mt-8 flex justify-center items-center transition-all ease-in hover:scale-95 w-full lg:max-w-[90%] h-auto text-center  ">
+        <img
+          src={heroImage}
+          className="rounded-3xl border-4 object-cover h-[70%]"
+          alt=""
+        />
       </div>
     </section>
   );

@@ -1,6 +1,5 @@
 // import { useState } from "react";
 import React from "react";
-import FoodDetails from "./pages/FoodDetails";
 import Homepage from "./pages/Homepage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
