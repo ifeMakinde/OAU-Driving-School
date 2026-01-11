@@ -4,14 +4,16 @@ import Navigation from "../components/Navigation";
 import { Award } from "lucide-react";
 import { Badge } from "../components/ui/badge";
 import Hero from "../components/Hero";
+import Why from "../components/Why";
+import Pricing from "../components/Pricing";
 
 function Homepage() {
   return (
     <>
       <Navigation />
 
-      <div className="text-center mt-6 ">
-        <Badge className="bg-white text-[14px] lg:text-md text-blue-600 px-4 py-1 font-bold border border-blue-100 shadow-md transition-all hover:scale-90  ">
+      <div className="w-full bg-[#f8fafc] text-center pt-20  ">
+        <Badge className="bg-white text-[14px] lg:text-md text-blue-600 px-4 py-1 font-bold border hover:border-blue-100 shadow-md transition-all duration-300 hover:scale-90  ">
           <span>
             <Award size={28} strokeWidth={1} />
           </span>
@@ -19,6 +21,8 @@ function Homepage() {
         </Badge>
       </div>
       <Hero />
+      <Why />
+      <Pricing />
     </>
   );
 }
