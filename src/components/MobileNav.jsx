@@ -5,7 +5,7 @@ function MobileNav({ nav }) {
   const mobileNav = [...nav, "Book a Session"];
 
   return (
-    <div className="w-full flex-col justify-center items-center absolute top-18 right-5 left-0 bg-white text-center p-6">
+    <div className="w-[90%] m-auto flex-col justify-center items-center absolute top-18 right-3 left-3 bg-white text-center p-6">
       {mobileNav.map((nav) => (
         <li
           key={nav}
