@@ -15,8 +15,11 @@ function Navigation() {
   }
 
   return (
-    <div className="w-full h-15 bg-[#f8fafc] fixed top-0 left-0  right-0 lg:right-5 z-10  ">
-      <div className=" max-w-[95%] lg:max-w-[90%] m-auto flex justify-between items-center p-4 ">
+    <div
+      className="w-full h-16 fixed top-0 left-0  right-0 lg:right-5 z-10 bg-[#f9fbfd] "
+      id="nav"
+    >
+      <div className=" max-w-[95%] lg:max-w-[90%] m-auto flex justify-between items-center p-4 border-transparent ">
         {/* logo */}
         <Link to="/">
           <div className="flex justify-center items-center gap-2">

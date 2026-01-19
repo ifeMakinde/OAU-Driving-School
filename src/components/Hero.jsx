@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import { BadgeCheck } from "lucide-react";
 import heroImage from "../assets/heroImage.webp";
 
+// bg-[#f8fafc]
+
 function Hero() {
   return (
-    <section className="w-full bg-[#f8fafc] pt-6 flex flex-col ">
+    <section className="w-full pt-6 flex flex-col ">
       <div className="text-center m-auto max-w-[90%]">
         <div className="flex flex-col gap-6">
           <h2 className="text-4xl lg:text-6xl font-bold tracking-wide ">
@@ -23,6 +25,7 @@ function Hero() {
             <button className="text-base lg:text-lg bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold shadow-md shadow-blue-600/30 transition-all hover:-translate-y-1 cursor-pointer">
               <Link>Start Learning </Link>
             </button>
+
             <button className="text-base lg:text-lg px-8 py-4 rounded-full font-bold shadow-md shadow-blue-600/30 border hover:border-blue-100 transition-all hover:-translate-y-1 cursor-pointer">
               <Link to="/prices">View Prices</Link>
             </button>
