@@ -2,7 +2,7 @@ import React from "react";
 import PricingCard from "./PricingCards";
 function Pricing() {
   return (
-    <section className="w-full bg-[#0F172A] py-20">
+    <section className="w-full bg-[#0F172A] py-20" id="prices">
       <div className="m-auto max-w-[90%] p-4 text-white">
         <div className="text-center py-8">
           <h3 className="text-[24px] lg:text-3xl font-semibold mb-3 capitalize  ">

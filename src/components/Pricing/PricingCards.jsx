@@ -14,7 +14,7 @@ const pricing = [
   {
     name: "Basic",
     price: "₦15,000",
-    details: "Ideal for beginners starting their driving journey.",
+    details: "Ideal for people looking to sharpen their driving skills .",
     features: [
       "3 Hours of Instruction",
       "Highway Driving",

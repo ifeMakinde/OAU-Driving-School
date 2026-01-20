@@ -4,7 +4,7 @@ import { Car, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import MobileNav from "./MobileNav";
-// import { X } from "lucide-react";
+import Logo from "./Logo";
 
 const navLinks = ["About", "Courses", "Review", "FAQ"];
 
@@ -22,15 +22,7 @@ function Navigation() {
       <div className=" max-w-[95%] lg:max-w-[90%] m-auto flex justify-between items-center p-4 border-transparent ">
         {/* logo */}
         <Link to="/">
-          <div className="flex justify-center items-center gap-2">
-            <span className="bg-blue-600 p-2 rounded-md">
-              <Car color="white" size={28} strokeWidth={1} />
-            </span>
-            <h2 className="font-bold text-base lg:text-lg no-wrap tracking-wide">
-              OAU <span className=" text-blue-600 font-bold">DRIVING </span>
-              SCHOOL
-            </h2>
-          </div>
+          <Logo />
         </Link>
 
         {/* desktop navlinks */}
@@ -38,7 +30,7 @@ function Navigation() {
           {navLinks.map((navLink) => (
             <li
               key={navLink}
-              className="list-none transition-all hover:scale-110 "
+              className="list-none transition-all text-gray-600 hover:text-blue-600 duration-200 hover:scale-110 "
             >
               <Link to={`/${navLink}`}>{navLink}</Link>
             </li>
