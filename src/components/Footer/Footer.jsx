@@ -7,9 +7,7 @@ function Footer() {
     <section className="w-full">
       <div className="py-25 m-auto max-w-[90%] grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-2">
         <Logo />
-        {/* <div> */}
         <FooterEL />
-        {/* </div>   */}
       </div>
     </section>
   );
