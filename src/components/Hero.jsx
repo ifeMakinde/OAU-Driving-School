@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import { BadgeCheck } from "lucide-react";
 import heroImage from "../assets/heroImage.webp";
 
-// bg-[#f8fafc]
-
 function Hero() {
   return (
     <section className="w-full pt-6 flex flex-col ">
