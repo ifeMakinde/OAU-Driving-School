@@ -13,7 +13,7 @@ function CTA() {
       </div>
 
       <div className="w-full lg:w-[50%] text-center">
-        <button className="text-base font-semibold px-6 py-4 bg-white text-blue-600 rounded-4xl">
+        <button className="text-base font-semibold px-6 py-4  cursor-pointer bg-white text-blue-600 rounded-4xl">
           Book a lesson now
         </button>
       </div>

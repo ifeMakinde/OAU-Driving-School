@@ -6,7 +6,13 @@ import { Link } from "react-router-dom";
 import MobileNav from "./MobileNav";
 import Logo from "./Logo";
 
-const navLinks = ["About", "Courses", "Review", "FAQ"];
+// const navLinks = ["About", "Courses", "Review", "FAQ"];
+const navLinks = [
+  { link: "About", href: "#" },
+  { link: "Courses", href: "#pricing" },
+  { link: "Review", href: "#review" },
+  { link: "FAQ", href: "#faq" },
+];
 
 function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,10 +35,10 @@ function Navigation() {
         <nav className=" hidden lg:flex justify-between items-center gap-4  ">
           {navLinks.map((navLink) => (
             <li
-              key={navLink}
+              key={navLink.link}
               className="list-none transition-all text-gray-600 hover:text-blue-600 duration-200 hover:scale-110 "
             >
-              <Link to={`/${navLink}`}>{navLink}</Link>
+              <a href={navLink.href}>{navLink.link}</a>
             </li>
           ))}
         </nav>

@@ -27,7 +27,7 @@ function Hero() {
             </button>
 
             <button className="text-base lg:text-lg px-8 py-4 rounded-full font-bold shadow-md shadow-blue-600/30 border hover:border-blue-100 transition-all hover:-translate-y-1 cursor-pointer">
-              <a href="#prices">View Prices</a>
+              <a href="#pricing">View Prices</a>
             </button>
           </div>
 
