@@ -14,9 +14,9 @@ function MobileNav({ nav }) {
         return (
           <li
             key={nav}
-            className={` list-none p-2 text-base hover:rounded-xl transition-all ease-in-out duration-400 hover:scale-105 ${ctaStyle}`}
+            className={`list-none p-2 text-base hover:rounded-xl transition-all ease-in-out duration-400 hover:scale-105 ${ctaStyle}`}
           >
-            <Link to={`/${nav}`}>{nav}</Link>
+            <a href="#">{nav}</a>
           </li>
         );
       })}
